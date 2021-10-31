@@ -1,0 +1,12 @@
+<div>
+    {{#each data}}
+    <form action="/onSubmit" method="POST">
+    <input type="text" placeholder="courseid" value="{{this.cid}}"><br>
+    <input type="text" placeholder="course name" value="{{this.cname}}"><br>
+    <input type="text" placeholder="institute name" value="{{this.iname}}"><br>
+    <input type="text" placeholder="department name" value="{{this.dname}}"><br>
+    <input type="text" placeholder="semester" value="{{this.sem}}"><br>
+    <button>Submit</button>
+    </form>
+    {{/each}}
+</div>

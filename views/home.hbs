@@ -1,0 +1,49 @@
+<h6>
+    <header>
+        {{#each header}}
+        {{this.msg}}
+        {{/each}}
+    </header>
+
+</h6>
+
+
+<div>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Sign in</h5>
+                <p class="card-text">
+                <div class="input-group mb-3">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Username: </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Password: </span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                    <button type="button" class="btn btn-success">Sign in</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h6>
+
+    <footer>
+        {{#each footer}}
+        <h7>
+            By: {{this.name}} <br>
+            ID: {{this.id}} <br>
+            Topic: {{this.topic}}
+        </h7>
+        {{/each}}
+    </footer>
+</h6>
